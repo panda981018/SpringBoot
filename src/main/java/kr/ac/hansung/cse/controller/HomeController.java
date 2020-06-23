@@ -12,14 +12,14 @@ public class HomeController {
 
 	// @GetMapping is a composed annotation that acts as a shortcut for
 	// @RequestMapping(value="/", method = RequestMethod.GET).
-	@GetMapping("/api/v1")
+	@GetMapping("/api/v1/")
 	public String home(Model model) {
 
 		logger.info("Info: Calling home( )");
 		logger.debug("Debug: Calling home( )");
 		logger.trace("trace: Calling home( )");
 
-		model.addAttribute("message", "hello world");
+		model.addAttribute("message", "It's Product Index Page");
 
 		return "index";
 

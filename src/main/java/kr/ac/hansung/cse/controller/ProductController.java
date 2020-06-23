@@ -20,7 +20,7 @@ import kr.ac.hansung.cse.model.Product;
 import kr.ac.hansung.cse.repo.ProductRepository;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/")
 public class ProductController {
 
 	@Autowired
