@@ -64,7 +64,7 @@ public class ProductController {
 	}
 	
 	@PutMapping("/products/{id}")
-	public ResponseEntity<Product> updateCustomer(@PathVariable("id") Integer id, @RequestBody Product product) {
+	public ResponseEntity<Product> updateProduct(@PathVariable("id") Integer id, @RequestBody Product product) {
 		Optional<Product> productData = repository.findById(id);
 
 		if (productData.isPresent()) {
